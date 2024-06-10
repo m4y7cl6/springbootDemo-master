@@ -1,5 +1,6 @@
 # Spring boot jpa & swagger-ui
-![image](https://hackmd.io/_uploads/SyKIwsgHC.png)
+![image](https://github.com/m4y7cl6/springbootDemo-master/assets/17524282/32fa0b92-d104-4ac1-83fa-b114452ece8e)
+
 
 ## Pom.xml
 ```!
@@ -254,18 +255,22 @@ public class DemoController {
 ```
 6. run
 
-![image](https://hackmd.io/_uploads/HJuCNoxS0.png)
+![image](https://github.com/m4y7cl6/springbootDemo-master/assets/17524282/83f368f2-ae23-4969-80ac-af846c24c8de)
+
 
 7. 至MSSQL查看table已建立
 
-![image](https://hackmd.io/_uploads/SkcwBigBC.png)
+![image](https://github.com/m4y7cl6/springbootDemo-master/assets/17524282/fae6e2e1-18a3-4ede-bebe-379c53ba665d)
+
 
 
 ---
 
-![image](https://hackmd.io/_uploads/ByGYSjxS0.png)
+![image](https://github.com/m4y7cl6/springbootDemo-master/assets/17524282/63f1070b-5ca3-45a6-b219-80008b7b9ef6)
+
 
 8. 
 ## swagger-ui
 http://localhost:8080/swagger-ui
-![image](https://hackmd.io/_uploads/HJA4-olBA.png)
+![image](https://github.com/m4y7cl6/springbootDemo-master/assets/17524282/5018c846-0059-4159-b0ae-08e20252a09f)
+

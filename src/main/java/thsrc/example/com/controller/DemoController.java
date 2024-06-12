@@ -1,5 +1,6 @@
 package thsrc.example.com.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,13 +12,14 @@ import thsrc.example.com.service.DemoService;
 import java.util.List;
 
 @RestController
+@Tag(name = "Demo api")
 @RequestMapping("/api")
 public class DemoController {
 	@Autowired
 	private DemoService service;
 
 	@GetMapping("/addRandom")
-	public String addRandomStudent() {
+	public String addRandomDemo() {
 		for(int i=0;i<10;i++) {
 			service.addDemo();
 		}
@@ -26,12 +28,12 @@ public class DemoController {
 	}
 
 	@GetMapping("/get")
-	public String getStudent(@RequestParam("id") long id) {
+	public String getDemo(@RequestParam("id") long id) {
 		return service.getDemo(id).toString();
 	}
 
 	@GetMapping("/add")
-	public String addStudent(@RequestParam("name") String name,@RequestParam("score") int score) {
+	public String addDemo(@RequestParam("name") String name,@RequestParam("score") int score) {
 		Demo s = new Demo();
 		s.setName(name);
 		s.setMathScore(score);

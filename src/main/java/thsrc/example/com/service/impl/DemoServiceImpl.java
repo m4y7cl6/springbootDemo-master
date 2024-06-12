@@ -27,7 +27,7 @@ public class DemoServiceImpl implements DemoService {
 
 		s.setName(firstName+" "+lastName);
 		s.setMathScore(score);
-		System.out.println(s);
+//		System.out.println(s);
 		DemoDao.save(s);
 	}
 

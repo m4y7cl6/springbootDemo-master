@@ -15,31 +15,31 @@ import java.util.List;
 public class DemoController {
 	@Autowired
 	private DemoService service;
-	
+
 	@GetMapping("/addRandom")
 	public String addRandomStudent() {
 		for(int i=0;i<10;i++) {
 			service.addDemo();
 		}
-		
+
 		return service.getAll().toString();
 	}
-	
+
 	@GetMapping("/get")
 	public String getStudent(@RequestParam("id") long id) {
 		return service.getDemo(id).toString();
 	}
-	
+
 	@GetMapping("/add")
 	public String addStudent(@RequestParam("name") String name,@RequestParam("score") int score) {
 		Demo s = new Demo();
 		s.setName(name);
 		s.setMathScore(score);
-		
+
 		service.addDemo(s);
-		
+
 		List<Demo> list = service.getAll();
-		
+
 		return list.get(list.size()-1).toString();
 	}
 

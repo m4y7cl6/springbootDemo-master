@@ -11,14 +11,14 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 @Entity
-@Table(name = "Demo")
+//@Table(name = "Demo")
 public class Demo {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-	@Column(name="Name")
+//	@Column(name="Name")
 	private String name;
-	@Column(name="Math_Score")
+//	@Column(name="Math_Score")
 	private int mathScore;
 	
 	public long getId() {

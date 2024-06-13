@@ -30,6 +30,7 @@
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
 			<scope>runtime</scope>
+			<version>9.4.0.jre8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -51,7 +52,7 @@
 		<dependency>
 			<groupId>org.liquibase</groupId>
 			<artifactId>liquibase-core</artifactId>
-			<version>4.9.1</version>
+			<version>3.10.3</version>
 		</dependency>
 <!--		<dependency>-->
 <!--			<groupId>org.hibernate</groupId>-->
@@ -81,15 +82,12 @@
 				<plugin>
 					<groupId>org.liquibase</groupId>
 					<artifactId>liquibase-maven-plugin</artifactId>
-					<version>3.10.3</version>
+					<version>4.9.1</version>
 					<configuration>
-						<changeLogFile>db/changelog/changelog-1.xml</changeLogFile>
-						<url>jdbc:sqlserver://127.0.0.1:1433;databaseName=tempdb</url>
-						<username>sa</username>
-						<password>!QAZ2wsx</password>
+						<propertyFile>src/main/resources/liquibase.properties</propertyFile>
+<!--						<changeLogFile>src/main/resources/db/changelog/outputChangeLog.xml</changeLogFile>-->
 					</configuration>
 				</plugin>
 		</plugins>
 	</build>
-
 </project>

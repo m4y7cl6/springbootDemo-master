@@ -1,7 +1,4 @@
 # Spring boot jpa & swagger-ui
-![image](https://github.com/m4y7cl6/springbootDemo-master/assets/17524282/32fa0b92-d104-4ac1-83fa-b114452ece8e)
-
-
 
 ## mssql_docker
 ```dockerfile=
